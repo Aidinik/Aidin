@@ -1,0 +1,311 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AIDIN NIKAMIZ Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d1117;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #0d1117;
+      border-bottom: 1px solid #1f2937;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: 500;
+      position: relative;
+    }
+
+    nav a::after {
+      content: '';
+      display: block;
+      height: 2px;
+      background: #00bfff;
+      width: 0;
+      transition: 0.3s;
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    section {
+      padding: 100px 20px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .home {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    .home img {
+      width: 300px;
+      border-radius: 20px;
+    }
+
+    .home .intro {
+      max-width: 500px;
+    }
+
+    .home .intro h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .home .intro p {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+
+    .hire-me {
+      background: #00bfff;
+      color: #0d1117;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 25px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .hire-me:hover {
+      background: #0077ff;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      width: 100%;
+      max-width: 900px;
+    }
+
+    .skill-item p {
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .progress-bar {
+      background: #1c1f26;
+      border-radius: 20px;
+      height: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .progress-bar .fill {
+      background: linear-gradient(to right, #00bfff, #0077ff);
+      height: 100%;
+      width: 80%;
+      border-radius: 20px;
+    }
+
+    .progress-bar span {
+      position: absolute;
+      right: 10px;
+      top: 0;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      color: white;
+      font-size: 13px;
+    }
+
+    .services-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 900px;
+      margin-top: 40px;
+    }
+
+    .service-btn {
+      background-color: #1c1f26;
+      color: white;
+      padding: 15px 25px;
+      border-radius: 30px;
+      font-weight: 500;
+      font-size: 15px;
+      border: 1px solid #00bfff;
+      transition: 0.3s ease;
+      cursor: default;
+    }
+
+    .service-btn:hover {
+      background-color: #00bfff;
+      color: #0d1117;
+    }
+
+    .contact {
+      font-size: 1.2rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1c1f26;
+    }
+
+    @media screen and (max-width: 768px) {
+      .home {
+        flex-direction: column;
+      }
+
+      .home img {
+        margin-bottom: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#skills">Skills</a>
+      <a href="#services">What I Do</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+ <section class="home" id="home">
+  <img class="hero-image" src="aidin.png" alt="AIDIN" />
+  <div class="intro">
+    <h1>Hi, I'm AIDIN NIKAMIZ</h1>
+    <p>A creative designer and developer with a passion for 3D, animation, and digital storytelling. I specialize in game design, web development, and visual experiences that blend artistic vision with modern technology.</p>
+    <button class="hire-me" onclick="location.href='#contact'">Hire Me</button>
+  </div>
+</section>
+
+
+  <section class="skills" id="skills">
+    <!-- Skills Section with Progress Bars -->
+<div class="skills-grid">
+  <div class="skill-item">
+    <p>Unreal Engine 5</p>
+    <div class="progress-bar">
+      <div class="fill" style="width: 100%;"></div>
+      <span>10/10</span>
+    </div>
+  </div>
+  <div class="skill-item">
+    <p>Blender</p>
+    <div class="progress-bar">
+      <div class="fill" style="width: 100%;"></div>
+      <span>10/10</span>
+    </div>
+  </div>
+  <div class="skill-item">
+    <p>Photoshop</p>
+    <div class="progress-bar">
+      <div class="fill" style="width: 90%;"></div>
+      <span>9/10</span>
+    </div>
+  </div>
+  <div class="skill-item">
+    <p>Illustrator</p>
+    <div class="progress-bar">
+      <div class="fill" style="width: 70%;"></div>
+      <span>7/10</span>
+    </div>
+  </div>
+  <div class="skill-item">
+    <p>After Effects</p>
+    <div class="progress-bar">
+      <div class="fill" style="width: 60%;"></div>
+      <span>6/10</span>
+    </div>
+  </div>
+  <div class="skill-item">
+    <p>Premiere Pro</p>
+    <div class="progress-bar">
+      <div class="fill" style="width: 80%;"></div>
+      <span>8/10</span>
+    </div>
+  </div>
+  <div class="skill-item">
+    <p>Figma</p>
+    <div class="progress-bar">
+      <div class="fill" style="width: 80%;"></div>
+      <span>8/10</span>
+    </div>
+  </div>
+  <div class="skill-item">
+    <p>HTML / CSS / JS</p>
+    <div class="progress-bar">
+      <div class="fill" style="width: 60%;"></div>
+      <span>6/10</span>
+    </div>
+  </div>
+</div>
+  </section>
+
+  <section class="services" id="services">
+    <h2 class="section-title">What I Do</h2>
+    <div class="services-buttons">
+      <div class="service-btn">Web Design</div>
+      <div class="service-btn">3D Modeling</div>
+      <div class="service-btn">2D/3D Animation</div>
+      <div class="service-btn">Game Design</div>
+      <div class="service-btn">Visual FX</div>
+      <div class="service-btn">Motion Graphics</div>
+      <div class="service-btn">Branding</div>
+      <div class="service-btn">Video Editing</div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <p>Email: AIDINIKAMIZ@GMAIL.COM</p>
+    <p>Phone: +98 911076905</p>
+    <p>TELEGRAM: @AIDINIK</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 AIDIN NIKAMIZ. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

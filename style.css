@@ -1,0 +1,393 @@
+/* Reset and Base Styles */
+/* Skills Section Styling */
+/* Skills Section */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.skill-item p {
+  font-size: 1.5rem; /* Larger text size */
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.progress-bar {
+  background: #1c1f26;
+  border-radius: 20px;
+  height: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-bar .fill {
+  background: linear-gradient(to right, #00bfff, #0077ff);
+  height: 100%;
+  border-radius: 20px;
+}
+
+.progress-bar span {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 13px;
+  padding-right: 10px;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: #111;
+  text-align: center;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem; /* Larger title size */
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.hero-text p {
+  font-size: 1.5rem; /* Larger paragraph text */
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #00aaff;
+  color: #ffffff;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+.hero-image {
+  width: 600px; /* Adjust the width to be 2x larger */
+  height: auto; /* Maintain aspect ratio */
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .hero-image {
+    width: 800px; /* Larger width for larger screens */
+  }
+}
+
+
+  .hero-text {
+    max-width: 50%;
+    text-align: left;
+  }
+
+  .hero-image img {
+    width: 600px;
+  }
+}
+
+
+
+
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  width: 100%;
+  max-width: 900px;
+}
+
+.skill-item p {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.progress-bar {
+  background: #1c1f26;
+  border-radius: 20px;
+  height: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-bar .fill {
+  background: linear-gradient(to right, #00bfff, #0077ff);
+  height: 100%;
+  width: 80%;
+  border-radius: 20px;
+}
+
+.progress-bar span {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 13px;
+}
+
+/* Services (What I Do) Buttons */
+.services-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 900px;
+  margin-top: 40px;
+}
+
+.service-btn {
+  background-color: #1c1f26;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 15px;
+  border: 1px solid #00bfff;
+  transition: 0.3s ease;
+  cursor: default;
+}
+
+.service-btn:hover {
+  background-color: #00bfff;
+  color: #0d1117;
+}
+ 
+
+
+
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0d1117;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+a {
+  color: #00aaff;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #111;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #00aaff;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: #111;
+  text-align: center;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #00aaff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+.hero-image img {
+  width: 300px;
+  height: auto;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+/* Sections */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Skills */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skill-card {
+  background-color: #222;
+  padding: 15px 25px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Services */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-card {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+}
+
+.service-card h3 {
+  margin-bottom: 10px;
+}
+
+/* Hire Form */
+.hire-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.hire-form input,
+.hire-form textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.hire-form button {
+  background-color: #00aaff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.skill-box {
+  margin-bottom: 25px;
+}
+
+.skill-box span {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+
+/* Footer */
+footer {
+  background-color: #111;
+  text-align: center;
+  padding: 20px;
+  color: #aaa;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .hero-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hero-text {
+    max-width: 50%;
+    text-align: left;
+  }
+
+  .hero-image img {
+    width: 600
