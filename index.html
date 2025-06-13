@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,17 +14,9 @@
 
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(270deg, #0a0f2c, #001833, #0a0f2c);
-      background-size: 600% 600%;
-      animation: gradientShift 20s ease infinite;
+      background-color: #020020;
       color: white;
       line-height: 1.6;
-    }
-
-    @keyframes gradientShift {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
     }
 
     header {
@@ -76,13 +67,25 @@
       justify-content: center;
     }
 
+    .poster {
+      padding: 0;
+      min-height: auto;
+    }
+
+    .poster img {
+      width: 100%;
+      max-height: 90vh;
+      object-fit: cover;
+      display: block;
+    }
+
     .home {
       flex-direction: row;
       justify-content: space-around;
     }
 
     .home img {
-      width: 300px;
+      width: 600px;
       border-radius: 20px;
     }
 
@@ -209,11 +212,16 @@
       }
 
       .home img {
+        width: 90%;
         margin-bottom: 30px;
       }
 
       .image-block img {
         width: 90%;
+      }
+
+      .poster img {
+        max-height: 60vh;
       }
     }
   </style>
@@ -224,10 +232,14 @@
     <nav>
       <a href="#home">Home</a>
       <a href="#skills">Skills</a>
-      <a href="#services">I Do</a>
+      <a href="#services">What I Do</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
+
+  <section class="poster">
+    <img src="HEAD.png" alt="Main Poster" />
+  </section>
 
   <section class="home" id="home">
     <img src="aidin.png" alt="AIDIN" />
@@ -239,88 +251,107 @@
   </section>
 
   <section class="skills" id="skills">
-    <!-- Skills Section with Progress Bars -->
-<div class="skills-grid">
-  <div class="skill-item">
-    <p>Unreal Engine 5</p>
-    <div class="progress-bar">
-      <div class="fill" style="width: 100%;"></div>
-      <span>10/10</span>
+    <div class="skills-grid">
+      <div class="skill-item"><p>Unreal Engine 5</p><div class="progress-bar"><div class="fill" style="width: 100%;"></div><span>10/10</span></div></div>
+      <div class="skill-item"><p>Blender</p><div class="progress-bar"><div class="fill" style="width: 100%;"></div><span>10/10</span></div></div>
+      <div class="skill-item"><p>Photoshop</p><div class="progress-bar"><div class="fill" style="width: 90%;"></div><span>9/10</span></div></div>
+      <div class="skill-item"><p>Illustrator</p><div class="progress-bar"><div class="fill" style="width: 70%;"></div><span>7/10</span></div></div>
+      <div class="skill-item"><p>After Effects</p><div class="progress-bar"><div class="fill" style="width: 60%;"></div><span>6/10</span></div></div>
+      <div class="skill-item"><p>Premiere Pro</p><div class="progress-bar"><div class="fill" style="width: 80%;"></div><span>8/10</span></div></div>
+      <div class="skill-item"><p>Figma</p><div class="progress-bar"><div class="fill" style="width: 80%;"></div><span>8/10</span></div></div>
+      <div class="skill-item"><p>HTML / CSS / JS</p><div class="progress-bar"><div class="fill" style="width: 60%;"></div><span>6/10</span></div></div>
     </div>
-  </div>
-  <div class="skill-item">
-    <p>Blender</p>
-    <div class="progress-bar">
-      <div class="fill" style="width: 100%;"></div>
-      <span>10/10</span>
-    </div>
-  </div>
-  <div class="skill-item">
-    <p>Photoshop</p>
-    <div class="progress-bar">
-      <div class="fill" style="width: 90%;"></div>
-      <span>9/10</span>
-    </div>
-  </div>
-  <div class="skill-item">
-    <p>Illustrator</p>
-    <div class="progress-bar">
-      <div class="fill" style="width: 70%;"></div>
-      <span>7/10</span>
-    </div>
-  </div>
-  <div class="skill-item">
-    <p>After Effects</p>
-    <div class="progress-bar">
-      <div class="fill" style="width: 60%;"></div>
-      <span>6/10</span>
-    </div>
-  </div>
-  <div class="skill-item">
-    <p>Premiere Pro</p>
-    <div class="progress-bar">
-      <div class="fill" style="width: 80%;"></div>
-      <span>8/10</span>
-    </div>
-  </div>
-  <div class="skill-item">
-    <p>Figma</p>
-    <div class="progress-bar">
-      <div class="fill" style="width: 80%;"></div>
-      <span>8/10</span>
-    </div>
-  </div>
-  <div class="skill-item">
-    <p>HTML / CSS / JS</p>
-    <div class="progress-bar">
-      <div class="fill" style="width: 60%;"></div>
-      <span>6/10</span>
-    </div>
-  </div>
-</div>
   </section>
 
   <section class="image-block">
     <img src="paper.png" alt="Decorative Paper Graphic" />
   </section>
 
-  <section class="services" id="services">
-    <h2 class="section-title">What I Do</h2>
-    <div class="services-buttons">
-      <div class="service-btn">Web Design</div>
-      <div class="service-btn">3D Modeling</div>
-      <div class="service-btn">2D/3D Animation</div>
-      <div class="service-btn">Game Design</div>
-      <div class="service-btn">Visual FX</div>
-      <div class="service-btn">Motion Graphics</div>
+<section class="services" id="services">
+  <h2 class="section-title">What I Do</h2>
+  <div class="services-buttons">
+
+    <div class="service-btn">
+      <div class="service-btn-title">Branding & Identity</div>
+      <ul>
+        <li>Logo Design</li>
+        <li>Brand Guidelines (Typography, Colors, Voice)</li>
+        <li>Business Card Design</li>
+        <li>Visual Identity Systems</li>
+        <li>Rebranding Projects</li>
+        <li>Brand Naming & Strategy</li>
+      </ul>
     </div>
-  </section>
+
+    <div class="service-btn">
+      <div class="service-btn-title">Web Design & Development</div>
+      <ul>
+        <li>Website UI/UX Design</li>
+        <li>Responsive Web Design</li>
+        <li>Landing Page Design</li>
+        <li>Portfolio Websites</li>
+        <li>E-commerce Websites</li>
+        <li>Website Redesign</li>
+        <li>Webflow/WordPress Development</li>
+      </ul>
+    </div>
+
+    <div class="service-btn">
+      <div class="service-btn-title">Graphic Design</div>
+      <ul>
+        <li>Poster & Flyer Design</li>
+        <li>Brochure & Catalog Design</li>
+        <li>Social Media Graphics</li>
+        <li>YouTube Thumbnails & Banners</li>
+        <li>Infographics</li>
+        <li>Packaging Design</li>
+        <li>Presentation Design (Pitch Decks, Slides)</li>
+      </ul>
+    </div>
+
+    <div class="service-btn">
+      <div class="service-btn-title">Motion & Animation</div>
+      <ul>
+        <li>2D Animation</li>
+        <li>Logo Animation</li>
+        <li>UI/UX Microinteractions</li>
+        <li>Animated Ads or Explainers</li>
+        <li>Instagram Reels or Story Animations</li>
+      </ul>
+    </div>
+
+    <div class="service-btn">
+      <div class="service-btn-title">Content Creation</div>
+      <ul>
+        <li>Visual Content for Social Media</li>
+        <li>Brand Content Packs</li>
+        <li>Digital Ads (Google, Meta)</li>
+        <li>Banner Ads (Static & Animated)</li>
+      </ul>
+    </div>
+
+    <div class="service-btn">
+      <div class="service-btn-title">Other Creative Services</div>
+      <ul>
+        <li>Concept Art / Digital Art</li>
+        <li>3D Modeling (if applicable)</li>
+        <li>Mockups & Prototypes</li>
+        <li>Creative Direction</li>
+        <li>Art Direction</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
 
   <section class="contact" id="contact">
     <h2 class="section-title">Contact Me</h2>
     <p>Email: AIDINIKAMIZ@GMAIL.COM</p>
     <p>Phone: +98 911076905</p>
   </section>
+
 
   <footer>
     <p>&copy; 2025 AIDIN NIKAMIZ. All rights reserved.</p>

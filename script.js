@@ -12,3 +12,8 @@ window.addEventListener('scroll', () => {
     }
   });
 });
+function copyToClipboard(text) {
+  navigator.clipboard.writeText(text).then(() => {
+    console.log("Copied: " + text);
+  });
+}
